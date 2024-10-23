@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Nav</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Secure Nav</h1>
+
+        <button id="scan-btn">Escanear</button>
+
+        <div id="scanning" style="display: none;">
+            <h2>- Escaneando -</h2>
+            <p>Isso pode levar alguns segundos.</p>
+        </div>
+
+        <div id="scan-results" style="display: none;">
+            <h2>Resultados do Scan</h2>
+
+            <div class="section">
+                <h3>Domínios de Terceira Parte Detectados</h3>
+                <ul id="third-party-domains">
+                    <!-- Lista de domínios de terceiros -->
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Cookies Detectados</h3>
+                <p>Cookies de primeira parte:</p>
+                <ul id="first-party-cookies">
+                    <!-- Lista de cookies de primeira parte -->
+                </ul>
+
+                <p>Cookies de terceira parte:</p>
+                <ul id="third-party-cookies">
+                    <!-- Lista de cookies de terceira parte -->
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Armazenamento Local</h3>
+                <ul id="local-storage-list">
+                    <!-- Lista de dados do armazenamento local -->
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Hooking ou Hijacking</h3>
+                <p id="hook-hijack-status">Não detectado</p>
+            </div>
+
+            <div class="section">
+                <h3>Canvas Fingerprint</h3>
+                <p id="canvas-fingerprint-status">Não detectado</p>
+            </div>
+
+            <div class="section">
+                <h2 id="security-status">O site é seguro</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="scan.js"></script>
+</body>
+</html>

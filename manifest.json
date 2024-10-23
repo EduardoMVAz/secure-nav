@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Secure Nav",
+    "version": "1.0",
+    
+    "applications": {
+      "gecko": {
+        "id": "securenav@mozilla.org"
+      }
+    },
+    
+    "permissions": [
+        "http://*/*", 
+        "https://*/*", 
+        "tabs",
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+  
+    "browser_action": {
+      "default_icon": "icons/secure_nav48.png",
+      "default_title": "Secure Nav",
+      "default_popup": "popup.html"
+    }
+  }
+  
